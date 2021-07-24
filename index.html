@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Font awesome -->
+     <script src="https://kit.fontawesome.com/aeecaa72ef.js" crossorigin="anonymous"></script>
+     <!-- BootStrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- Custom css -->
+     <link rel="stylesheet" href="./style.css">
+
+
+     <title> AT-Shop | Online Store</title>
+</head>
+
+<body>
+
+     <header>
+          <!-- Navbar -->
+          <nav class="container d-flex justify-content-between align-items-center ">
+               <div class="logo">
+                    <p class="fs-1">AT-SHOP</p>
+               </div>
+               <div class="nav-items d-none d-xl-block">
+                    <ul class="d-flex ">
+                         <li><a href="#">Home</a></li>
+                         <li><a href="#">Products</a></li>
+
+                         <li><a href="#">About</a></li>
+                         <li><a href="#">Contact</a></li>
+                    </ul>
+
+               </div>
+               <div class="nav-login fs-3">
+                    <a href="#"> <i class="fas fa-sign-in-alt"></i></a>
+                    <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+               </div>
+          </nav>
+          <div id="carouselExampleIndicators" class="carousel slide container pt-5 pb-5" data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                         class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                         aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                         aria-label="Slide 3"></button>
+               </div>
+               <div class="carousel-inner">
+                    <div class="carousel-item active">
+                         <div class="row d-flex align-items-center">
+                              <div class="col-lg-7 col">
+                                   <h1>Sports </h1>
+                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi optio mollitia,
+                                        quia quam, modi obcaecati ipsa quae saepe rem pariatur voluptate iure beatae
+                                        explicabo quaerat quidem ratione? Sunt, voluptates consequatur?</p>
+                                   <a href="#" class="btn btn-dark">Buy Now</a>
+                              </div>
+                              <div class="col-lg-5">
+
+                                   <img class="img-fluid" src="./assets/explore (1).png" class="d-block w-100"
+                                        alt="...">
+                              </div>
+                         </div>
+                    </div>
+                    <div class="carousel-item">
+                         <div class="row d-flex align-items-center">
+                              <div class="col-lg-7">
+                                   <h1>Car </h1>
+                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi optio mollitia,
+                                        quia
+                                        quam, modi obcaecati ipsa quae saepe rem pariatur voluptate iure beatae
+                                        explicabo
+                                        quaerat quidem ratione? Sunt, voluptates consequatur?</p>
+                                   <a href="#" class="btn btn-dark">Buy Now</a>
+                              </div>
+                              <div class="col-lg-5">
+
+
+                                   <img class="img-fluid" src="./assets/explore (2).png" class="d-block w-100"
+                                        alt="...">
+                              </div>
+                         </div>
+                    </div>
+                    <div class="carousel-item">
+                         <div class="row d-flex align-items-center">
+                              <div class="col-lg-7">
+                                   <h1>Nike </h1>
+                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi optio mollitia,
+                                        quia
+                                        quam, modi obcaecati ipsa quae saepe rem pariatur voluptate iure beatae
+                                        explicabo
+                                        quaerat quidem ratione? Sunt, voluptates consequatur?</p>
+                                   <a href="#" class="btn btn-dark">Buy Now</a>
+                              </div>
+                              <div class="col-lg-5">
+
+
+                                   <img class="img-fluid" src="./assets/nike.png" class="d-block w-100" alt="...">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+               </button>
+          </div>
+     </header>
+     <main>
+          <!-- section.container>.products.row.g-3>product.col.col-sm-12.col-md-6.col-lg-3*12>.p-3.d-flex.justify-content-center.align-items-center.flex-column.shadow.rounded.bg-white>img.img-fluid[src='./assets/product-$.jpg']+h2{Name-$}+h4{price-10$}a.btn.btn-dark.text-white{Buy Now} -->
+          <section class="container">
+               <h1>Products</h1>
+               <div class="products row g-3">
+                    <product class="col-12  col-md-6 col-lg-3">
+                         <div
+                              class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                              <img src="./assets/product-1.jpg" alt="" class="img-fluid">
+                              <h2>Product Name-1</h2>
+                              <h4>price-101</h4>
+                              <a href="" class="btn btn-dark text-white">Buy Now</a>
+                         </div>
+                    </product>
+                    <product class="col-12 col-sm-12 col-md-6 col-lg-3">
+                         <div
+                              class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                              <img src="./assets/product-2.jpg" alt="" class="img-fluid">
+                              <h2>Product Name-2</h2>
+                              <h4>price-102</h4>
+                              <a href="" class="btn btn-dark text-white">Buy Now</a>
+                         </div>
+                    </product>
+                    <product class="col-12 col-sm-12 col-md-6 col-lg-3">
+                         <div
+                              class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                              <img src="./assets/product-3.jpg" alt="" class="img-fluid">
+                              <h2>Product Name-3</h2>
+                              <h4>price-103</h4>
+                              <a href="" class="btn btn-dark text-white">Buy Now</a>
+                         </div>
+                    </product>
+                    <product class="col-12 col-sm-12 col-md-6 col-lg-3">
+                         <div
+                              class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                              <img src="./assets/product-4.jpg" alt="" class="img-fluid">
+                              <h2>Product Name-4</h2>
+                              <h4>price-104</h4>
+                              <a href="" class="btn btn-dark text-white">Buy Now</a>
+                         </div>
+                    </product>
+                    <product class="col-12 col-sm-12 col-md-6 col-lg-3">
+                         <div
+                              class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                              <img src="./assets/product-5.jpg" alt="" class="img-fluid">
+                              <h2>Product Name-5</h2>
+                              <h4>price-105</h4>
+                              <a href="" class="btn btn-dark text-white">Buy Now</a>
+                         </div>
+                    </product>
+                    <product class="col-12 col-sm-12 col-md-6 col-lg-3">
+                         <div
+                              class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                              <img src="./assets/product-6.jpg" alt="" class="img-fluid">
+                              <h2>Product Name-6</h2>
+                              <h4>price-106</h4>
+                              <a href="" class="btn btn-dark text-white">Buy Now</a>
+                         </div>
+                    </product>
+                    <product class="col-12 col-sm-12 col-md-6 col-lg-3">
+                         <div
+                              class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                              <img src="./assets/product-7.jpg" alt="" class="img-fluid">
+                              <h2>Product Name-7</h2>
+                              <h4>price-107</h4>
+                              <a href="" class="btn btn-dark text-white">Buy Now</a>
+                         </div>
+                    </product>
+                    <product class="col-12 col-sm-12 col-md-6 col-lg-3">
+                         <div
+                              class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                              <img src="./assets/product-8.jpg" alt="" class="img-fluid">
+                              <h2>Product Name-8</h2>
+                              <h4>price-108</h4>
+                              <a href="" class="btn btn-dark text-white">Buy Now</a>
+                         </div>
+                    </product>
+                    <product class="col-12 col-sm-12 col-md-6 col-lg-3">
+                         <div
+                              class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                              <img src="./assets/product-9.jpg" alt="" class="img-fluid">
+                              <h2>Product Name-9</h2>
+                              <h4>price-109</h4>
+                              <a href="" class="btn btn-dark text-white">Buy Now</a>
+                         </div>
+                    </product>
+                    <product class="col-12 col-sm-12 col-md-6 col-lg-3">
+                         <div
+                              class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                              <img src="./assets/product-10.jpg" alt="" class="img-fluid">
+                              <h2>Product Name-10</h2>
+                              <h4>price-1010</h4>
+                              <a href="" class="btn btn-dark text-white">Buy Now</a>
+                         </div>
+                    </product>
+                    <product class="col-12 col-sm-12 col-md-6 col-lg-3">
+                         <div
+                              class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                              <img src="./assets/product-11.jpg" alt="" class="img-fluid">
+                              <h2>Product Name-11</h2>
+                              <h4>price-1011</h4>
+                              <a href="" class="btn btn-dark text-white">Buy Now</a>
+                         </div>
+                    </product>
+                    <product class="col-12 col-sm-12 col-md-6 col-lg-3">
+                         <div
+                              class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                              <img src="./assets/product-12.jpg" alt="" class="img-fluid">
+                              <h2>Product Name-12</h2>
+                              <h4>price-1012</h4>
+                              <a href="" class="btn btn-dark text-white">Buy Now</a>
+                         </div>
+                    </product>
+               </div>
+          </section>
+
+          <!-- feature section -->
+          <!--    section.container>.features.row.g-3>feature.col.col-sm-12.col-md-6.col-lg-4*9>.p-3.d-flex.justify-content-center.align-items-center.flex-column.shadow.rounded.bg-white>img.img-fluid[src='./assets/product-$.jpg']+h2{Name-$}+h4{price-10$}a.btn.btn-dark.text-white{Buy Now} -->
+          <section class="container">
+               <h1>Feature Product</h1>
+               <section class="container">
+                    <div class="features row g-3">
+                         <feature class="col-12 col-sm-12 col-md-6 col-lg-4">
+                              <div
+                                   class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                                   <img src="./assets/product-1.jpg" alt="" class="img-fluid">
+                                   <h2>Name-1</h2>
+                                   <h4>price-101</h4>
+                                   <a href="" class="btn btn-dark text-white">Buy Now</a>
+                              </div>
+                         </feature>
+                         <feature class="col-12 col-sm-12 col-md-6 col-lg-4">
+                              <div
+                                   class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                                   <img src="./assets/product-2.jpg" alt="" class="img-fluid">
+                                   <h2>Name-2</h2>
+                                   <h4>price-102</h4>
+                                   <a href="" class="btn btn-dark text-white">Buy Now</a>
+                              </div>
+                         </feature>
+                         <feature class="col-12 col-sm-12 col-md-6 col-lg-4">
+                              <div
+                                   class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                                   <img src="./assets/product-3.jpg" alt="" class="img-fluid">
+                                   <h2>Name-3</h2>
+                                   <h4>price-103</h4>
+                                   <a href="" class="btn btn-dark text-white">Buy Now</a>
+                              </div>
+                         </feature>
+                         <feature class="col-12 col-sm-12 col-md-6 col-lg-4">
+                              <div
+                                   class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                                   <img src="./assets/product-4.jpg" alt="" class="img-fluid">
+                                   <h2>Name-4</h2>
+                                   <h4>price-104</h4>
+                                   <a href="" class="btn btn-dark text-white">Buy Now</a>
+                              </div>
+                         </feature>
+                         <feature class="col-12 col-sm-12 col-md-6 col-lg-4">
+                              <div
+                                   class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                                   <img src="./assets/product-5.jpg" alt="" class="img-fluid">
+                                   <h2>Name-5</h2>
+                                   <h4>price-105</h4>
+                                   <a href="" class="btn btn-dark text-white">Buy Now</a>
+                              </div>
+                         </feature>
+                         <feature class="col-12 col-sm-12 col-md-6 col-lg-4">
+                              <div
+                                   class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                                   <img src="./assets/product-6.jpg" alt="" class="img-fluid">
+                                   <h2>Name-6</h2>
+                                   <h4>price-106</h4>
+                                   <a href="" class="btn btn-dark text-white">Buy Now</a>
+                              </div>
+                         </feature>
+                         <feature class="col-12 col-sm-12 col-md-6 col-lg-4">
+                              <div
+                                   class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                                   <img src="./assets/product-7.jpg" alt="" class="img-fluid">
+                                   <h2>Name-7</h2>
+                                   <h4>price-107</h4>
+                                   <a href="" class="btn btn-dark text-white">Buy Now</a>
+                              </div>
+                         </feature>
+                         <feature class="col-12 col-sm-12 col-md-6 col-lg-4">
+                              <div
+                                   class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                                   <img src="./assets/product-8.jpg" alt="" class="img-fluid">
+                                   <h2>Name-8</h2>
+                                   <h4>price-108</h4>
+                                   <a href="" class="btn btn-dark text-white">Buy Now</a>
+                              </div>
+                         </feature>
+                         <feature class="col-12 col-sm-12 col-md-6 col-lg-4">
+                              <div
+                                   class="p-3 d-flex justify-content-center align-items-center flex-column shadow rounded bg-white">
+                                   <img src="./assets/product-9.jpg" alt="" class="img-fluid">
+                                   <h2>Name-9</h2>
+                                   <h4>price-109</h4>
+                                   <a href="" class="btn btn-dark text-white">Buy Now</a>
+                              </div>
+                         </feature>
+                    </div>
+               </section>
+          </section>
+
+
+
+     </main>
+     <!-- Offer Section -->
+     <section class="container mt-5 bg-white">
+          <div class="row d-flex align-items-center">
+               <div class="offers col-12 col-lg-6">
+                    <div class="offer d-flex flex-column ">
+                         <div class="w-75">
+                              <h1>Clean and fragnent soy wax</h1>
+                         </div>
+                         <small>wow wow wow wow wow wow wow</small>
+                         <ul>
+                              <li>
+                                   <p>Eco-1</p>
+                              </li>
+                              <li>
+                                   <p>Eco-2</p>
+                              </li>
+                              <li>
+                                   <p>Eco-3</p>
+                              </li>
+                              <li>
+                                   <p>Eco-4</p>
+                              </li>
+
+
+                         </ul>
+                         <div class="btn w-25 bg-primary border">Learn More</div>
+                    </div>
+               </div>
+               <div class="offers col-12 col-lg-6">
+                    <div class="offer d-flex flex-column align-items-center justify-content-center">
+                         <img class="img-fluid" src="./assets/nike.png" alt="">
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- Testmonial -->
+     <section class="container mt-5 mb-5">
+          <div class="m-3 d-flex justify-content-center flex-column align-items-center">
+               <h1>Testmonial</h1>
+               <small>Some qutes from our happy customers</small>
+          </div>
+          <div class="row g-3">
+               <div class="feedbacks col col-md-6 col-lg-4 col-sm-12">
+                    <div class="d-flex justify-content-center align-items-center flex-column p-5 bg-light">
+                         <img src="./assets/client (1).jpg" alt="" class="img-fluid ">
+                         <div class="rating">
+
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                         </div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, sapiente.</p>
+                         <p>Name-1</p>
+
+
+                    </div>
+
+               </div>
+               <div class="feedbacks col col-md-6 col-lg-4 col-sm-12">
+                    <div class="d-flex justify-content-center align-items-center flex-column p-5 bg-light">
+                         <img src="./assets/client (2).jpg" alt="" class="img-fluid ">
+                         <div class="rating">
+
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                         </div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, sapiente.</p>
+                         <p>Name-1</p>
+
+
+                    </div>
+               </div>
+               <div class="feedbacks col col-md-6 col-lg-4 col-sm-12">
+                    <div class="d-flex justify-content-center align-items-center flex-column p-5 bg-light">
+                         <img src="./assets/client (3).jpg" alt="" class="img-fluid ">
+                         <div class="rating">
+
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                         </div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, sapiente.</p>
+                         <p>Name-1</p>
+
+
+                    </div>
+               </div>
+          </div>
+     </section>
+     <footer class="bg-dark ">
+          
+
+          <div class="container  ">
+
+
+               <div class="row text-white pt-2 ">
+                    
+                    <hr class="bg-white mt-5" style="height:3px" ;>
+                    <div class="col-lg-6 col col-sm-12 ">
+                         <div class="w-100 d-flex justify-content-center align-items-center flex-column  ">
+                              <div class="logo">
+                                   <p> AT-SHOP</p>
+                              </div>
+                              <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                         </div>
+
+
+                    </div>
+                    <div class="col-lg-2 col-12 d-flex justify-content-center align-items-center flex-column ">
+                         <p class="text-danger">Discovery</p>
+                         <p>New Season</p>
+                         <p>Most searched</p>
+                         <p>Most Selled</p>
+                    </div>
+                    <div class="col-lg-2 col-12 d-flex justify-content-center align-items-center flex-column">
+                         <p class="text-danger">About</p>
+                         <p>Help</p>
+                         <p>Shipping</p>
+                         <p>Affialates</p>
+                    </div>
+                    <div class="col-lg-2 col col-12 d-flex justify-content-center align-items-center flex-column">
+                         <p class="text-danger">Info</p>
+                         <p>Contact Us</p>
+                         <p>Privacy Policy</p>
+                         <p>Terms & Conditions</p>
+                    </div>
+               </div>
+          </div>
+
+
+     </footer>
+
+
+     <!-- Js bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+     </script>
+</body>
+
+</html>

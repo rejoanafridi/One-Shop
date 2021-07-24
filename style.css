@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+:root {
+	--color: #e15125;
+	--text--color: #20879e;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+header {
+	background-image: url("./assets/bgc.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+.logo p {
+	color: var(--color);
+	font-family: 'Zen Tokyo Zoo', cursive;
+	font-size: 60px;
+}
+.nav-items ul {
+	list-style: none;
+}
+.nav-items ul li {
+	padding: 10px 30px;
+}
+.nav-items ul li a {
+	text-decoration: none;
+	color: var(--text--color);
+}
+.nav-items ul li a:hover {
+	color: var(--color);
+	transition: 0.5s ease-out;
+}
+.nav-login i {
+	color: var(--text--color);
+}
+
+/* main css */
+main{
+     background:#ced2d6;
+}
+.product, .feature{
+	/* padding: 10px; */
+	/* padding:0;
+	border-radius: 29px;
+	background:#ddd; */
+
+     
+}
+.product img, .feature img{
+     width: 100%;
+     border-radius: 20px;
+}
+.feedbacks img{
+	/* height: 50px; */
+	width: 100px;
+	height: auto;
+	border-radius:50%;
+}
+.rating{
+	display: flex;
+	justify-content: center;
+	margin: 10px 0;
+	color: var(--text--color);
+}
