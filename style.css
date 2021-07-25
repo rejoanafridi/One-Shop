@@ -17,10 +17,11 @@ header {
 	background-attachment: fixed;
 	background-position: center;
 }
-.logo p {
+.logo a {
 	color: var(--color);
 	font-family: 'Zen Tokyo Zoo', cursive;
 	font-size: 60px;
+	text-decoration: none;
 }
 .nav-items ul {
 	list-style: none;
@@ -36,8 +37,9 @@ header {
 	color: var(--color);
 	transition: 0.5s ease-out;
 }
-.nav-login i {
+.nav-login i,a {
 	color: var(--text--color);
+	text-decoration: none;
 }
 
 /* main css */
@@ -67,4 +69,23 @@ main{
 	justify-content: center;
 	margin: 10px 0;
 	color: var(--text--color);
+}
+
+/* Cart css */
+.cart-desc li{
+	list-style: none;
+}
+.cart-footer span{
+	color: lightseagreen;
+}
+.section-title{
+	color: var(--text--color);
+	font-size: 60px;
+	padding: 40px;
+	
+	text-align: center;
+}
+/* Cart details */
+.cart-details-title{
+	text-align: center;
 }
